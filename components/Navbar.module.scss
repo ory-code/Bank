@@ -1,0 +1,53 @@
+@import "../styles/variables.module.scss";
+
+.header {
+  padding: $XS_PADDING;
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ul {
+    display: flex;
+    
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.6);
+    :first-child {
+        color: white;
+        font-weight: 500;
+    }
+    :last-child {
+        margin: 0;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+  }
+
+  li {
+    margin-right: 1rem;
+    font-weight: lighter;
+  }
+}
+
+.hamburger__menu {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .header {
+
+    padding-left: 100px;
+  }
+  
+}
