@@ -7,7 +7,11 @@ body {
   font-family: "Poppins";
   font-size: 62.5%;
   color: white;
-
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
 }
 a {
   color: inherit;

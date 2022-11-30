@@ -1,4 +1,5 @@
 
+import AboutUs from "../components/AboutUs";
 import Banner from "../components/Banner";
 import Billing from "../components/Billing";
 import Business from "../components/Business";
@@ -11,6 +12,7 @@ export default function Home() {
      <Banner/>
      <Business/>
      <Billing/>
+     <AboutUs/>
     </div>
   );
 }

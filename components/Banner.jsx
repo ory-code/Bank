@@ -4,7 +4,7 @@ import style from "./Banner.module.scss";
 import { discount, arrowUp, robot } from "../assets";
 const Banner = () => {
   return (
-    <div className={` bg-gray-gradient ${style.banner}`}>
+    <div className={`  ${style.banner}`}>
       <div className={`bg-discount-gradient ${style.banner__discount}`}>
         <Image
           src={discount}
