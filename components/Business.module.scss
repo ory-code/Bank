@@ -83,10 +83,10 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
   .business__container {
-    padding-left: 126px;
-    justify-content: space-between;
+    padding: $L_PADDING;
+   justify-content: center;
   }
 
   .business__content__text {
@@ -99,7 +99,7 @@
   }
 
   .business__card {
-    margin-right: 8%;
+    margin:  0 8%;
   }
   .business__content__card {
     max-width: 420px;

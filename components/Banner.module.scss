@@ -150,6 +150,12 @@
 //desktop  
 
 @media screen and (min-width: 1024px){
+  .banner__container {
+ 
+    padding: $L_PADDING;
+  }
+
+
     .info {
         flex-direction: initial;
         justify-content: space-around;
@@ -184,7 +190,7 @@
   .button__getStarted {
     position: absolute;
     top: 0;
-    left: 28%;
+    left: 33%;
   }
 
   .image__banner {

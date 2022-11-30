@@ -36,7 +36,7 @@ function BasicMenu() {
         open={open}
         onClose={handleClose}
         MenuListProps={{
-          Poppins: "basic-button",
+          'aria-labelledby': "basic-button",
         }}
       >
         <MenuItem onClick={handleClose}>Home</MenuItem>

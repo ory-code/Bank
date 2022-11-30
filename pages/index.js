@@ -1,5 +1,6 @@
 
 import Banner from "../components/Banner";
+import Billing from "../components/Billing";
 import Business from "../components/Business";
 import NavBar from "../components/NavBar";
 
@@ -9,6 +10,7 @@ export default function Home() {
      <NavBar/>
      <Banner/>
      <Business/>
+     <Billing/>
     </div>
   );
 }

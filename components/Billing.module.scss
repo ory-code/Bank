@@ -1,0 +1,78 @@
+@import "../styles/variables.module.scss";
+
+.billing {
+  padding: $XS_PADDING;
+}
+
+@media (orientation: landscape) and (min-width: 666px) and (max-width: 747px){
+  .billing__content {
+    display: flex;
+  }
+}
+
+.billing__text {
+  h1 {
+    font-size: 3.2rem;
+  }
+  p {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.billing__icn {
+  display: flex;
+
+  :last-child {
+    margin-left: 2rem;
+  }
+}
+
+.billing__image {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .billing {
+    padding: $S_PADDING;
+  }
+
+  .billing__content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse
+  }
+
+  .billing__text {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .billing {
+    padding: $L_PADDING;
+    justify-content: center;
+  
+  }
+
+
+  .billing__text {
+    max-width: 450px;
+    margin:  0 8%;
+    h1 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 2.2rem;
+    }
+  }
+  .billing__image {
+    
+    img {
+      width: 380px;
+      height: 350px;
+    }
+  }
+}
