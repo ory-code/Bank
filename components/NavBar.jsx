@@ -1,12 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import { logo } from "../assets/";
+import { logo,menu } from "../assets/";
 import style from "./Navbar.module.scss";
 
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import MenuIcon from "@mui/icons-material/Menu";
+
 import Link from "next/link";
 
 function BasicMenu() {
@@ -28,7 +29,7 @@ function BasicMenu() {
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
-        <MenuIcon fontSize="large" />
+        <Image src={menu} alt="" width={45 } height={45}/>
       </Button>
       <Menu
         id="basic-menu"
@@ -53,13 +54,7 @@ const NavBar = () => {
     <header className={` ${style.header}`}>
       <nav className={style.nav}>
         <Link href={"/"}>
-          <Image
-            src={logo}
-            alt="bank logo"
-            width={82}
-            height={25}
-            loading="lazy"
-          />
+        <Image src={logo} alt="" width={180} height={45} />
         </Link>
         <ul className={style.ul}>
           <li>Home</li>

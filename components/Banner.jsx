@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import style from "./Banner.module.scss";
 import { discount, arrowUp, robot } from "../assets";
+import CountUp from "react-countup";
 const Banner = () => {
   return (
     <div className={`  ${style.banner}`}>
@@ -40,24 +41,31 @@ const Banner = () => {
             <span className="text-gradient">Started</span>
           </div>
         </div>
-        <div className={`${style.image__banner}`}>
+        <div className={` sidebar ${style.image__banner}`}>
           <Image src={robot} alt="" width={700} height={738} />
         </div>
       </div>
 
       <div className={`${style.info}`}>
         <div className={`${style.info__data}`}>
-          <p className={`${style.number}`}>3800+</p>
-          <p className="text-gradient">USE ACTIVE</p>
+          <p className={` num ${style.number}`}>
+            38000
+          </p>
+         
+          <p className="text-gradient">USER ACTIVE</p>
           <span>|</span>
         </div>
         <div className={`${style.info__data}`}>
-          <p className={`${style.number}`}>230+</p>
+          <p className={` num ${style.number}`}>
+            225+
+          </p>
           <p className="text-gradient">TRUSTED BY COMPAGNY</p>
           <span>|</span>
         </div>
         <div className={`${style.info__data}`}>
-          <p className={`${style.number}`}>230M+ €</p>
+          <p className={` num ${style.number}`}>
+            450M€
+          </p>
           <p className="text-gradient">TRANSACTION</p>
           <span>|</span>
         </div>

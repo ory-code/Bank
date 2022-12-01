@@ -1,0 +1,91 @@
+@import "../styles/variables.module.scss";
+
+.footer {
+    padding: $XS_PADDING;
+    background: linear-gradient(
+        153.47deg,
+        rgba(255, 255, 255, 0) -341.94%,
+        hsl(256, 28%, 10%) 95.11%
+      );
+ }
+
+.footer__content {
+    border-bottom: 1px solid #3F3E45;
+    padding-bottom: 1rem;
+    
+}
+
+.footer__content__logo {
+    p {
+        font-size:1.6rem;
+        color: rgba(255, 255, 255, 0.6);
+        margin: 2.5rem 0;
+    }
+}
+.footer__content__text {
+    h3 {
+        font-size: 1.8rem;
+        
+    }
+    li {
+       font-size: 1.6rem;
+       color: rgba(255, 255, 255, 0.6);
+       margin: 1rem;
+    }
+}
+
+.footer__bottom {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.footer__icon__text {
+    span { 
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1.9rem;
+    }
+}
+
+.footer__icon {
+    margin-top: 1.6rem;
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: $S_PADDING;
+    }
+    .footer__content {
+        display: flex;
+    }
+
+    .footer__content__text {
+        margin: 0 1.8rem;
+    }
+
+    .footer__bottom {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .footer {
+        padding: $L_PADDING;
+    }
+    .footer__content {
+        display: flex;
+        justify-content: space-around;
+        padding: $M_PADDING;
+    }
+    .footer__bottom {
+        display: flex;
+        align-items: baseline;
+        // justify-content: ce;
+        
+    }
+}
