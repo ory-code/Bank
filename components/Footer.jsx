@@ -44,7 +44,7 @@ const Footer = () => {
       </div>
       <div className={`${style.footer__bottom}`}>
         <div className={`${style.footer__icon__text}`}>
-          <span> 2021. Code by Sacha. </span>
+          <span> 2022. Code by Sacha. </span>
         </div>
         <div className={`${style.footer__icon}`}>
           <Link href="https://www.linkedin.com/in/sacha-ory-developer/" target="_blank" rel="noopener norefer">
